@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netcoreapp2.0;netcoreapp2.2;net45;net46;</TargetFrameworks>
+    <RootNamespace>Billas.Identifier</RootNamespace>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.0.0</FileVersion>
+    <Version>1.0.0</Version>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Authors>Tobias Billås</Authors>
+    <Product>SwedishIdentifier</Product>
+    <Description>Tolka och validera svenska personnummer, samordningsnummer och nationella reservnummer.
+Skapa nya personnummer, samordningsnummer och nationella reservnummer helt eller delvis slumpade.
+Utbyggbart för att hantera lokala reservnummer.</Description>
+  </PropertyGroup>
+
+</Project>

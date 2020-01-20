@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Billas.Identifier.LiV\Billas.Identifier.LiV.csproj" />
+    <ProjectReference Include="..\Billas.Identifier.ROL\Billas.Identifier.ROL.csproj" />
+    <ProjectReference Include="..\Billas.Identifier.SLL\Billas.Identifier.SLL.csproj" />
+    <ProjectReference Include="..\Billas.Identifier.VGR\Billas.Identifier.VGR.csproj" />
+    <ProjectReference Include="..\Billas.Identifier\Billas.Identifier.csproj" />
+  </ItemGroup>
+
+</Project>

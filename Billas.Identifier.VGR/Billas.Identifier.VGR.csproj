@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netcoreapp2.0;netcoreapp2.2;net45;net46;</TargetFrameworks>
+    <Description>Tolka och validera lokala reservnummer för Västra Götalandsregionen.
+Skapa nya reservnummer helt eller delvis slumpade.</Description>
+    <Authors>Tobias Billås</Authors>
+    <Product>SwedishIdentifier - Västra Götalandsregionen</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Billas.Identifier\Billas.Identifier.csproj" />
+  </ItemGroup>
+
+</Project>

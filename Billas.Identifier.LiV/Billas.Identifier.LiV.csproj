@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netcoreapp2.0;netcoreapp2.2;net45;net46;</TargetFrameworks>
+    <Authors>Tobias Billås</Authors>
+    <Product>SwedishIdentifier - Landstinget i Värmland</Product>
+    <Description>Tolka och validera lokala reservnummer för Landstinget i Värmland.
+Skapa nya reservnummer helt eller delvis slumpade.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Billas.Identifier\Billas.Identifier.csproj" />
+  </ItemGroup>
+
+</Project>
