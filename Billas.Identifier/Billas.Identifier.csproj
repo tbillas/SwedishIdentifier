@@ -12,6 +12,19 @@
     <Description>Tolka och validera svenska personnummer, samordningsnummer och nationella reservnummer.
 Skapa nya personnummer, samordningsnummer och nationella reservnummer helt eller delvis slumpade.
 Utbyggbart för att hantera lokala reservnummer.</Description>
+    <PackageProjectUrl>https://github.com/tbillas/SwedishIdentifier</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/tbillas/SwedishIdentifier.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Personnummer, Samordningsnummer, Reservnummer</PackageTags>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <Copyright>2020 Tobias Billås</Copyright>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
