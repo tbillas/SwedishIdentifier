@@ -18,6 +18,7 @@ Utbyggbart för att hantera lokala reservnummer.</Description>
     <PackageTags>Personnummer, Samordningsnummer, Reservnummer</PackageTags>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <Copyright>2020 Tobias Billås</Copyright>
+    <PackageId>SwedishIdentifier</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
