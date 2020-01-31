@@ -96,21 +96,21 @@ NationalReserveNumberIdentifier identifier4 = PersonIdentifier.Parse("00749852BZ
 
 ### Ladda
 ```cSharp
-NationalReserveNumberIdentifier identifier = PersonIdentifier.Load(NationalReserveNumberIdentifier.Oid, "00342145-BZ31");
+NationalReserveNumberIdentifier identifier = PersonIdentifier.Load(NationalReserveNumberIdentifier.Oid, "00342145BZ31");
 ```
 
 ### Skapa
 ````cSharp
-CoordinationNumberIdentifier created = new PersonIdentifierBuilder()
+NationalReserveNumberIdentifier created = new PersonIdentifierBuilder()
 	.BornYear(1979)
 	.BornMonth(11)
 	.BornDay(9)
 	.AsFemale
-	.BuildCoordinationNumber()
+	.BuildNationalReserveNumber()
 `````
 Ger ett nationellt reservnummer ungefär 22791109-JF40, dvs med känd ålder och kön.
 
 ````cSharp
-CoordinationNumberIdentifier created = new PersonIdentifierBuilder().BuildCoordinationNumber()
+NationalReserveNumberIdentifier created = new PersonIdentifierBuilder().BuildNationalReserveNumber()
 `````
 Ger ett nationellt reservnummer ungefär 00917250-SRC1, dvs med okänd ålder och okänt kön.
