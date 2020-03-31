@@ -14,6 +14,9 @@ namespace Billas.Identifier.Tests
 
             Assert.IsInstanceOfType(identity, typeof(PersonalNumberIdentifier));
 
+            Assert.AreEqual("191212121212", identity.Value);
+            Assert.AreEqual(PersonalNumberIdentifier.Oid, identity.System);
+
             Assert.IsTrue(identity.CanCalculateBirthDate);
             Assert.AreEqual(107, identity.CalculateAge(new DateTime(2020, 1, 1)));
 
@@ -29,6 +32,9 @@ namespace Billas.Identifier.Tests
             var identity = PersonIdentifier.Parse("190510+7122");
 
             Assert.IsInstanceOfType(identity, typeof(PersonalNumberIdentifier));
+
+            Assert.AreEqual("191905107122", identity.Value);
+            Assert.AreEqual(PersonalNumberIdentifier.Oid, identity.System);
 
             Assert.IsTrue(identity.CanCalculateBirthDate);
             Assert.AreEqual(100, identity.CalculateAge(new DateTime(2020, 1, 1)));
@@ -46,6 +52,9 @@ namespace Billas.Identifier.Tests
 
             Assert.IsInstanceOfType(identity, typeof(PersonalNumberIdentifier));
 
+            Assert.AreEqual("189911253830", identity.Value);
+            Assert.AreEqual(PersonalNumberIdentifier.Oid, identity.System);
+
             Assert.IsTrue(identity.CanCalculateBirthDate);
             Assert.AreEqual(120, identity.CalculateAge(new DateTime(2020, 1, 1)));
 
@@ -61,6 +70,9 @@ namespace Billas.Identifier.Tests
             var identity = PersonIdentifier.Parse("990911-9944");
 
             Assert.IsInstanceOfType(identity, typeof(PersonalNumberIdentifier));
+
+            Assert.AreEqual("199909119944", identity.Value);
+            Assert.AreEqual(PersonalNumberIdentifier.Oid, identity.System);
 
             Assert.IsTrue(identity.CanCalculateBirthDate);
             Assert.AreEqual(20, identity.CalculateAge(new DateTime(2020, 1, 1)));
@@ -104,6 +116,9 @@ namespace Billas.Identifier.Tests
             var identity = new PersonalNumberIdentifier("191212121212");
 
             Assert.IsInstanceOfType(identity, typeof(PersonalNumberIdentifier));
+
+            Assert.AreEqual("191212121212", identity.Value);
+            Assert.AreEqual(PersonalNumberIdentifier.Oid, identity.System);
 
             Assert.IsTrue(identity.CanCalculateBirthDate);
             Assert.AreEqual(107, identity.CalculateAge(new DateTime(2020, 1, 1)));

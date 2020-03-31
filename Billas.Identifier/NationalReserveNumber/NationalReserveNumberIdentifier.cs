@@ -7,8 +7,7 @@ namespace Billas.Identifier
         public const string Oid = "1.2.752.74.9.1";
         private readonly PersonIdentityGender _calculatedGender;
         public override string System => Oid;
-        public override string DisplayName => "Nationellt reservnummer";
-
+        
         public override bool CanCalculateGender { get; }
 
         public override PersonIdentityGender CalculatedGender

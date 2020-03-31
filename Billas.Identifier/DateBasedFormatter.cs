@@ -106,7 +106,7 @@ namespace Billas.Identifier
         }
         protected virtual void FormatHyphen(StringBuilder sb, PersonIdentifierFormatOption option)
         {
-            var useHyphen = (option.WithHyphen.HasValue && option.WithHyphen.Value) || !string.IsNullOrEmpty(Hyphen);
+            var useHyphen = option.WithHyphen ?? !string.IsNullOrEmpty(Hyphen);
 
             if (useHyphen)
             {

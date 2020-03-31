@@ -6,7 +6,7 @@ namespace Billas.Identifier.SLL
     {
         public const string Oid = "1.2.752.97.3.1.3";
         public override string System => Oid;
-        public override string DisplayName => "Stockholms Läns Landsting";
+        
         public override bool CanCalculateBirthDate => false;
         public override bool CanCalculateGender => false;
         public override DateTime CalculatedBirthDate => throw new InvalidOperationException(ExceptionMessage.CannotCalculateAge);

@@ -4,7 +4,8 @@ namespace Billas.Identifier
 {
     public interface IPersonIdentifier
     {
-        string DisplayName { get; }
+        string Value { get; }
+        string System { get; }
 
         bool CanCalculateBirthDate { get; }
         bool CanCalculateGender { get; }

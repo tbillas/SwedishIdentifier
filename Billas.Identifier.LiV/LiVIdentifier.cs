@@ -4,8 +4,7 @@
     {
         public const string Oid = "1.2.752.74.9.2";
         public override string System => Oid;
-        public override string DisplayName => "Landstinget i Värmland";
-
+        
         public override bool CanCalculateGender { get; }
         public override PersonIdentityGender CalculatedGender { get; }
 

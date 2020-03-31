@@ -4,7 +4,7 @@ namespace Billas.Identifier
 {
     public abstract class PersonIdentifier<TFormatter> : IPersonIdentifier where TFormatter : PersonIdentifierFormatter
     {
-        public string Value { get; }
+        public virtual string Value => ToString(new PersonIdentifierFormatOption { WithCentury = true, WithHyphen = false });
         public abstract string System { get; }
 
         private readonly TFormatter _formatter;
@@ -12,10 +12,8 @@ namespace Billas.Identifier
         protected PersonIdentifier(TFormatter formatter)
         {
             _formatter = formatter ?? throw new ArgumentNullException(nameof(formatter));
-            Value = _formatter.Value;
         }
 
-        public abstract string DisplayName { get; }
         public abstract bool CanCalculateBirthDate { get; }
         public abstract bool CanCalculateGender { get; }
         public abstract DateTime CalculatedBirthDate { get; }

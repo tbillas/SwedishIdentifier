@@ -6,8 +6,7 @@ namespace Billas.Identifier.VGR
     {
         public const string Oid = "1.2.752.113.11.0.2.1.1.1";
         public override string System => Oid;
-        public override string DisplayName => "Västra Götalandsregionen";
-
+        
         public override bool CanCalculateGender { get; }
         public override PersonIdentityGender CalculatedGender { get; }
 

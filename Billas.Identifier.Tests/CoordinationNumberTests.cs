@@ -14,6 +14,9 @@ namespace Billas.Identifier.Tests
 
             Assert.IsInstanceOfType(identity, typeof(CoordinationNumberIdentifier));
 
+            Assert.AreEqual("196206703974", identity.Value);
+            Assert.AreEqual(CoordinationNumberIdentifier.Oid, identity.System);
+
             Assert.IsTrue(identity.CanCalculateBirthDate);
             Assert.AreEqual(57, identity.CalculateAge(new DateTime(2020, 1, 1)));
 
@@ -54,6 +57,9 @@ namespace Billas.Identifier.Tests
         public void CanInstantiate()
         {
             var identity = new CoordinationNumberIdentifier("19620670-3974");
+
+            Assert.AreEqual("196206703974", identity.Value);
+            Assert.AreEqual(CoordinationNumberIdentifier.Oid, identity.System);
 
             Assert.IsTrue(identity.CanCalculateBirthDate);
             Assert.AreEqual(57, identity.CalculateAge(new DateTime(2020, 1, 1)));

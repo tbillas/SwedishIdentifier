@@ -6,7 +6,7 @@ namespace Billas.Identifier.ROL
     {
         public const string Oid = "1.2.752.74.9.3";
         public override string System => Oid;
-        public override string DisplayName => "Region Örebro Län";
+
         public override bool CanCalculateBirthDate => false;
         public override bool CanCalculateGender => false;
         public override DateTime CalculatedBirthDate => throw new InvalidOperationException(ExceptionMessage.CannotCalculateAge);
